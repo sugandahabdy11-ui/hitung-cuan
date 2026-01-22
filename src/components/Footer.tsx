@@ -2,29 +2,31 @@ import { Link } from "react-router-dom";
 import { Calculator } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-card mt-auto">
-      <div className="container py-8 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
+    <footer className="border-t border-border bg-card">
+      <div className="container py-10">
+        {/* TOP GRID */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+          {/* BRAND */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 font-bold text-lg">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <Calculator className="h-4 w-4" />
               </div>
-              <span>CalcTools Finance Indonesia</span>
+              <span>CalcTools Finance</span>
             </Link>
-            <p className="text-sm text-muted-foreground max-w-xs">
-              Kalkulator keuangan online gratis untuk menghitung gaji bersih PPh 21,
-              cicilan KPR, dan estimasi perencanaan keuangan di Indonesia.
+            <p className="text-sm text-muted-foreground">
+              CalcTools Finance Indonesia adalah platform kalkulator keuangan
+              online gratis untuk membantu menghitung gaji bersih PPh 21,
+              simulasi cicilan KPR, dan perencanaan keuangan di Indonesia.
             </p>
           </div>
 
-          {/* Kalkulator */}
+          {/* KALKULATOR LINKS */}
           <div>
-            <h3 className="font-semibold mb-4">Kalkulator</h3>
+            <h3 className="font-semibold mb-3">Kalkulator</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -39,15 +41,15 @@ export function Footer() {
                   to="/kalkulator-kpr"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Kalkulator KPR / Kredit Rumah
+                  Kalkulator KPR / Cicilan Rumah
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* LEGAL LINKS */}
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
+            <h3 className="font-semibold mb-3">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -76,20 +78,22 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Disclaimer Text */}
+          {/* DISCLAIMER */}
           <div>
-            <h3 className="font-semibold mb-4">Informasi</h3>
+            <h3 className="font-semibold mb-3">Informasi</h3>
             <p className="text-sm text-muted-foreground">
-              Seluruh hasil perhitungan di situs ini bersifat estimasi dan tidak
-              menggantikan perhitungan resmi dari pihak bank, perusahaan, atau
-              otoritas pajak. Gunakan sebagai referensi awal.
+              Seluruh kalkulator di situs ini bersifat simulasi dan hanya untuk
+              referensi. Hasil perhitungan dapat berbeda dengan perhitungan
+              resmi dari bank, perusahaan, atau otoritas pajak. Untuk keputusan
+              finansial penting, konsultasikan dengan profesional terkait.
             </p>
           </div>
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+        {/* BOTTOM */}
+        <div className="mt-10 border-t border-border pt-6 text-center text-sm text-muted-foreground">
           <p>
-            © {currentYear} CalcTools Finance Indonesia. Seluruh hak cipta dilindungi.
+            © {year} CalcTools Finance Indonesia. Seluruh hak cipta dilindungi.
           </p>
         </div>
       </div>
