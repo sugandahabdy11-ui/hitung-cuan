@@ -1,5 +1,7 @@
+import { LegalLayout } from "@/components/layouts/LegalLayout";
 export default function TermsOfService() {
   return (
+    <LegalLayout>
     <div className="container mx-auto px-4 py-10 prose dark:prose-invert">
       <h1>Syarat dan Ketentuan</h1>
       <p> 
@@ -100,5 +102,6 @@ export default function TermsOfService() {
       </p>
       <p><strong>Terakhir diperbarui:</strong> 2026</p>
     </div>
+    </LegalLayout>
   );
 }
