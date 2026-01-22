@@ -9,15 +9,19 @@ interface MainLayoutProps {
 export function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
-      {/* Header */}
+      {/* Site Header */}
       <Header />
 
       {/* Main Content */}
-      <main className="flex-1">
+      <main
+        id="main-content"
+        role="main"
+        className="flex-1"
+      >
         {children}
       </main>
 
-      {/* Footer */}
+      {/* Site Footer */}
       <Footer />
     </div>
   );
