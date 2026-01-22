@@ -18,7 +18,7 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 /**
- * Initialize theme:
+ * Theme initialization:
  * - localStorage
  * - system preference
  */
@@ -53,31 +53,26 @@ export default function App() {
         <Sonner />
 
         <BrowserRouter>
-          {/* LAYOUT WRAPPER */}
-          <div className="flex flex-col min-h-screen">
-            {/* MAIN CONTENT */}
-            <main className="flex-1">
-              <Routes>
-                {/* MAIN */}
-                <Route path="/" element={<Index />} />
-                <Route
-                  path="/kalkulator-gaji-bersih-pph21"
-                  element={<KalkulatorPph21 />}
-                />
-                <Route path="/kalkulator-kpr" element={<KalkulatorKpr />} />
+          <Routes>
+            {/* MAIN PAGES */}
+            <Route path="/" element={<Index />} />
+            <Route
+              path="/kalkulator-gaji-bersih-pph21"
+              element={<KalkulatorPph21 />}
+            />
+            <Route
+              path="/kalkulator-kpr"
+              element={<KalkulatorKpr />}
+            />
 
-                {/* LEGAL */}
-                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                <Route path="/terms-of-service" element={<TermsOfService />} />
-                <Route path="/disclaimer" element={<Disclaimer />} />
+            {/* LEGAL PAGES */}
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
 
-                {/* 404 */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </main>
-
-            {/* GLOBAL FOOTER (HANYA DI SINI) */}
-          </div>
+            {/* 404 */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
