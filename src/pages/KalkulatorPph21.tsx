@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+import { MainLayout } from "@/components/layouts/MainLayout";
 import { Pph21Calculator } from "@/components/Pph21Calculator";
 import { FaqSection } from "@/components/FaqSection";
 import { Link } from "react-router-dom";
@@ -38,7 +38,7 @@ const Pph21Page = () => {
   }, []);
 
   return (
-    <Layout>
+    <MainLayout>
       {/* Page Header */}
       <section className="py-8 md:py-12 border-b border-border">
         <div className="container">
@@ -227,7 +227,7 @@ const Pph21Page = () => {
           }),
         }}
       />
-    </Layout>
+    </MainLayout>
   );
 };
 
