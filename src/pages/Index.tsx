@@ -10,7 +10,7 @@ const calculators = [
     description: "Hitung gaji bersih atau take home pay Anda setelah potongan PPh 21, BPJS Kesehatan, dan BPJS Ketenagakerjaan. Dilengkapi dengan perhitungan step-by-step.",
     href: "/kalkulator-gaji-bersih-pph21",
     icon: Calculator,
-    features: ["PPh 21 Progresif", "BPJS Otomatis", "PTKP 2024"],
+    features: ["PPh 21 Progresif", "BPJS Otomatis", "PTKP 2026"],
   },
   {
     title: "Kalkulator KPR / Kredit Rumah",
