@@ -11,8 +11,8 @@ const faqs = [
     answer: "PPh 21 atau Pajak Penghasilan Pasal 21 adalah pajak yang dikenakan atas penghasilan berupa gaji, upah, honorarium, tunjangan, dan pembayaran lain yang diterima oleh wajib pajak orang pribadi dalam negeri. Setiap karyawan yang menerima penghasilan di atas PTKP wajib dipotong PPh 21 oleh pemberi kerja.",
   },
   {
-    question: "Berapa PTKP (Penghasilan Tidak Kena Pajak) tahun 2024?",
-    answer: "PTKP untuk tahun 2024 adalah Rp 54.000.000 per tahun untuk wajib pajak tidak kawin tanpa tanggungan (TK/0). Tambahan Rp 4.500.000 untuk wajib pajak kawin, dan Rp 4.500.000 untuk setiap tanggungan (maksimal 3 tanggungan). Status K/3 memiliki PTKP tertinggi yaitu Rp 72.000.000 per tahun.",
+    question: "Berapa PTKP (Penghasilan Tidak Kena Pajak) tahun 2026?",
+    answer: "PTKP untuk tahun 2026 adalah Rp 54.000.000 per tahun untuk wajib pajak tidak kawin tanpa tanggungan (TK/0). Tambahan Rp 4.500.000 untuk wajib pajak kawin, dan Rp 4.500.000 untuk setiap tanggungan (maksimal 3 tanggungan). Status K/3 memiliki PTKP tertinggi yaitu Rp 72.000.000 per tahun.",
   },
   {
     question: "Bagaimana cara menghitung PPh 21 dengan tarif progresif?",
@@ -111,9 +111,9 @@ const Pph21Page = () => {
                 <li><strong>35%</strong> untuk PKP di atas Rp 5 miliar per tahun</li>
               </ul>
 
-              <h3>PTKP (Penghasilan Tidak Kena Pajak) 2024</h3>
+              <h3>PTKP (Penghasilan Tidak Kena Pajak) 2026</h3>
               <p>
-                PTKP adalah batas penghasilan yang tidak dikenakan pajak. Nilai PTKP tahun 2024 
+                PTKP adalah batas penghasilan yang tidak dikenakan pajak. Nilai PTKP tahun 2026 
                 berdasarkan PMK Nomor 101/PMK.010/2016:
               </p>
               <ul>
@@ -153,7 +153,7 @@ const Pph21Page = () => {
               <ul>
                 <li>Menggunakan tarif pajak progresif standar (bukan TER untuk pegawai baru)</li>
                 <li>BPJS Kesehatan dengan basis maksimal Rp 12.000.000</li>
-                <li>BPJS Jaminan Pensiun dengan basis maksimal Rp 10.042.300 (2024)</li>
+                <li>BPJS Jaminan Pensiun dengan basis maksimal Rp 10.042.300 (2026)</li>
                 <li>Tidak memperhitungkan penghasilan tidak teratur (bonus, THR)</li>
                 <li>Tidak memperhitungkan potongan lain seperti pinjaman karyawan</li>
               </ul>
