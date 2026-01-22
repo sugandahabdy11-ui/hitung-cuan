@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+import { MainLayout } from "@/components/layouts/MainLayout";
 import { KprCalculator } from "@/components/KprCalculator";
 import { FaqSection } from "@/components/FaqSection";
 import { Link } from "react-router-dom";
@@ -38,7 +38,7 @@ const KprPage = () => {
   }, []);
 
   return (
-    <Layout>
+    <MainLayout>
       {/* Page Header */}
       <section className="py-8 md:py-12 border-b border-border">
         <div className="container">
@@ -242,7 +242,7 @@ const KprPage = () => {
           }),
         }}
       />
-    </Layout>
+    </MainLayout>
   );
 };
 
