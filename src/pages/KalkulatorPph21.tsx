@@ -10,60 +10,66 @@ const faqs = [
   {
     question: "Apa itu PPh 21 dan siapa yang wajib membayarnya?",
     answer:
-      "PPh 21 adalah pajak atas penghasilan berupa gaji, upah, honorarium, tunjangan, dan pembayaran lain yang diterima karyawan.",
+      "PPh 21 adalah pajak atas penghasilan berupa gaji, upah, honorarium, tunjangan, dan pembayaran lain yang diterima karyawan atau individu sehubungan dengan pekerjaan di Indonesia.",
   },
   {
-    question: "Berapa PTKP terbaru?",
+    question: "Berapa PTKP terbaru di Indonesia?",
     answer:
-      "PTKP dasar adalah Rp 54.000.000 per tahun, dengan tambahan untuk status kawin dan tanggungan.",
+      "PTKP dasar adalah Rp54.000.000 per tahun untuk wajib pajak orang pribadi, dengan tambahan untuk status kawin dan jumlah tanggungan sesuai peraturan perpajakan yang berlaku.",
   },
   {
-    question: "Apakah BPJS mengurangi PPh 21?",
+    question: "Apakah iuran BPJS mengurangi PPh 21?",
     answer:
-      "Ya, iuran BPJS Kesehatan dan Ketenagakerjaan yang dibayar karyawan menjadi pengurang pajak.",
+      "Ya. Iuran BPJS Kesehatan dan BPJS Ketenagakerjaan yang dibayar oleh karyawan dapat menjadi pengurang penghasilan bruto dalam perhitungan PPh 21.",
   },
 ];
 
 export default function KalkulatorPph21Page() {
   return (
     <MainLayout>
-      {/* SEO */}
+      {/* SEO META */}
       <Seo
-        title="Kalkulator Gaji Bersih PPh 21 Online (Indonesia) | CalcTools Finance"
-        description="Hitung gaji bersih setelah potongan PPh 21, BPJS Kesehatan, dan BPJS Ketenagakerjaan dengan kalkulator online gratis."
+        title="Kalkulator Gaji Bersih PPh 21 Online Indonesia | CalcTools Finance"
+        description="Kalkulator gaji bersih PPh 21 online untuk Indonesia. Hitung take home pay setelah potongan pajak dan BPJS sesuai peraturan terbaru."
         canonical="https://calctoolsfinance.site/kalkulator-gaji-bersih-pph21"
       />
 
-      {/* Structured Data */}
+      {/* STRUCTURED DATA */}
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            name: "Kalkulator Gaji Bersih PPh 21",
-            applicationCategory: "FinanceApplication",
-            operatingSystem: "Web",
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "IDR",
-            },
-            author: {
-              "@type": "Organization",
-              name: "CalcTools Finance Indonesia",
-            },
-          })}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "Kalkulator Gaji Bersih PPh 21",
+              description:
+                "Kalkulator online untuk menghitung gaji bersih setelah PPh 21 dan BPJS sesuai peraturan pajak Indonesia.",
+              applicationCategory: "FinanceApplication",
+              operatingSystem: "Web Browser",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "IDR",
+              },
+              author: {
+                "@type": "Organization",
+                name: "CalcTools Finance Indonesia",
+                url: "https://calctoolsfinance.site",
+              },
+            }),
+          }}
+        />
       </Helmet>
 
-      {/* Page Header */}
+      {/* PAGE HEADER */}
       <section className="border-b border-border py-8 md:py-12">
         <div className="container">
           <nav className="mb-4 text-sm text-muted-foreground">
             <Link to="/" className="hover:text-foreground">
               Beranda
             </Link>{" "}
-            / Kalkulator PPh 21
+            / Kalkulator Gaji Bersih PPh 21
           </nav>
 
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -71,20 +77,32 @@ export default function KalkulatorPph21Page() {
           </h1>
 
           <p className="max-w-3xl text-muted-foreground">
-            Hitung gaji bersih (take home pay) setelah potongan PPh 21 dan BPJS
-            sesuai peraturan pajak Indonesia.
+            Hitung gaji bersih (take home pay) Anda setelah potongan PPh 21,
+            BPJS Kesehatan, dan BPJS Ketenagakerjaan berdasarkan peraturan pajak
+            Indonesia.
           </p>
         </div>
       </section>
 
-      {/* Calculator */}
+      {/* CALCULATOR */}
       <section className="py-10">
         <div className="container max-w-4xl">
           <Pph21Calculator />
         </div>
       </section>
 
-      {/* Internal Link */}
+      {/* FINANCE DISCLAIMER (INTERNAL) */}
+      <section className="pb-10">
+        <div className="container max-w-4xl">
+          <div className="rounded-xl border bg-muted/50 p-6 text-sm text-muted-foreground">
+            <strong>Catatan:</strong> Hasil perhitungan bersifat estimasi dan tidak
+            menggantikan perhitungan resmi dari Direktorat Jenderal Pajak (DJP)
+            atau kebijakan perusahaan. Gunakan sebagai referensi awal.
+          </div>
+        </div>
+      </section>
+
+      {/* INTERNAL LINK */}
       <section className="pb-10">
         <div className="container max-w-4xl">
           <div className="rounded-xl border bg-card p-6">
@@ -93,9 +111,10 @@ export default function KalkulatorPph21Page() {
             </h3>
             <Link
               to="/kalkulator-kpr"
-              className="inline-flex items-center text-accent font-medium"
+              className="inline-flex items-center text-accent font-medium hover:gap-2 transition-all"
             >
-              Buka Kalkulator KPR <ArrowRight className="ml-1 h-4 w-4" />
+              Buka Kalkulator KPR
+              <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </div>
         </div>
