@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+import { Layout } from "@/components/layouts/MainLayout";
 import { Link } from "react-router-dom";
 import { Calculator, Home, ArrowRight, Shield, Zap, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
