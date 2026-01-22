@@ -10,41 +10,41 @@ const faqs = [
   {
     question: "Apa itu KPR dan bagaimana cara kerjanya?",
     answer:
-      "KPR (Kredit Pemilikan Rumah) adalah fasilitas kredit dari bank untuk pembelian properti dengan sistem cicilan.",
+      "KPR (Kredit Pemilikan Rumah) adalah fasilitas pembiayaan dari bank untuk membeli properti, dimana nasabah membayar uang muka dan sisanya dicicil dalam jangka waktu tertentu.",
   },
   {
-    question: "Berapa minimal uang muka (DP) KPR?",
+    question: "Berapa minimal uang muka (DP) KPR di Indonesia?",
     answer:
-      "DP KPR umumnya 10–20% dari harga properti, tergantung kebijakan bank dan jenis rumah.",
+      "DP KPR umumnya berkisar antara 10–20% dari harga properti, tergantung kebijakan bank, jenis rumah, dan profil peminjam.",
   },
   {
     question: "Apa perbedaan bunga fixed dan floating?",
     answer:
-      "Bunga fixed tetap selama periode tertentu, sedangkan floating mengikuti suku bunga pasar.",
+      "Bunga fixed bersifat tetap selama periode tertentu, sedangkan bunga floating mengikuti kondisi pasar dan dapat berubah.",
   },
   {
     question: "Bagaimana cara menghitung cicilan KPR?",
     answer:
-      "Cicilan dihitung dengan metode anuitas menggunakan pokok pinjaman, bunga bulanan, dan tenor.",
+      "Cicilan KPR dihitung menggunakan metode anuitas berdasarkan pokok pinjaman, bunga bulanan, dan tenor kredit.",
   },
   {
     question: "Berapa tenor maksimal KPR di Indonesia?",
     answer:
-      "Tenor KPR biasanya hingga 20–30 tahun tergantung usia dan kebijakan bank.",
+      "Tenor KPR di Indonesia umumnya hingga 20–30 tahun, tergantung usia peminjam dan kebijakan bank.",
   },
 ];
 
 export default function KalkulatorKprPage() {
   return (
     <MainLayout>
-      {/* SEO */}
+      {/* SEO META */}
       <Seo
         title="Kalkulator KPR Online Indonesia | Simulasi Cicilan Rumah"
-        description="Simulasi cicilan KPR online gratis. Hitung cicilan bulanan, total bunga, dan total pembayaran rumah dengan metode anuitas."
+        description="Kalkulator KPR online gratis untuk Indonesia. Simulasikan cicilan bulanan, total bunga, dan total pembayaran rumah dengan metode anuitas."
         canonical="https://calctoolsfinance.site/kalkulator-kpr"
       />
 
-      {/* Structured Data */}
+      {/* STRUCTURED DATA */}
       <Helmet>
         <script
           type="application/ld+json"
@@ -53,8 +53,10 @@ export default function KalkulatorKprPage() {
               "@context": "https://schema.org",
               "@type": "WebApplication",
               name: "Kalkulator KPR Online",
+              description:
+                "Simulasi cicilan KPR rumah di Indonesia menggunakan metode anuitas untuk menghitung cicilan bulanan dan total bunga.",
               applicationCategory: "FinanceApplication",
-              operatingSystem: "Web",
+              operatingSystem: "Web Browser",
               offers: {
                 "@type": "Offer",
                 price: "0",
@@ -63,13 +65,14 @@ export default function KalkulatorKprPage() {
               author: {
                 "@type": "Organization",
                 name: "CalcTools Finance Indonesia",
+                url: "https://calctoolsfinance.site",
               },
             }),
           }}
         />
       </Helmet>
 
-      {/* Page Header */}
+      {/* PAGE HEADER */}
       <section className="border-b border-border py-8 md:py-12">
         <div className="container">
           <nav className="mb-4 text-sm text-muted-foreground">
@@ -84,31 +87,45 @@ export default function KalkulatorKprPage() {
           </h1>
 
           <p className="max-w-3xl text-muted-foreground">
-            Hitung estimasi cicilan KPR bulanan, total bunga, dan total pembayaran
-            rumah menggunakan metode anuitas.
+            Simulasikan cicilan KPR bulanan, total bunga, dan total pembayaran
+            rumah berdasarkan harga properti, uang muka, tenor, dan suku bunga
+            sesuai praktik perbankan di Indonesia.
           </p>
         </div>
       </section>
 
-      {/* Calculator */}
+      {/* CALCULATOR */}
       <section className="py-10">
         <div className="container max-w-4xl">
           <KprCalculator />
         </div>
       </section>
 
-      {/* Internal Link */}
+      {/* FINANCIAL DISCLAIMER */}
+      <section className="pb-10">
+        <div className="container max-w-4xl">
+          <div className="rounded-xl border bg-muted/50 p-6 text-sm text-muted-foreground">
+            <strong>Catatan:</strong> Hasil simulasi KPR ini bersifat estimasi dan
+            tidak mengikat. Cicilan aktual dapat berbeda tergantung kebijakan
+            bank, jenis bunga, biaya administrasi, asuransi, dan faktor lainnya.
+            Gunakan sebagai referensi awal sebelum mengajukan KPR ke bank.
+          </div>
+        </div>
+      </section>
+
+      {/* INTERNAL LINK */}
       <section className="pb-10">
         <div className="container max-w-4xl">
           <div className="rounded-xl border bg-card p-6">
             <h3 className="font-semibold mb-2">
-              Pastikan cicilan sesuai gaji bersih
+              Pastikan cicilan sesuai gaji bersih Anda
             </h3>
             <Link
               to="/kalkulator-gaji-bersih-pph21"
-              className="inline-flex items-center text-accent font-medium"
+              className="inline-flex items-center text-accent font-medium hover:gap-2 transition-all"
             >
-              Hitung Gaji Bersih <ArrowRight className="ml-1 h-4 w-4" />
+              Hitung Gaji Bersih
+              <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </div>
         </div>
