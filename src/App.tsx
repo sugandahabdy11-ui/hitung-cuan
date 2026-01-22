@@ -10,9 +10,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import Index from "./pages/Index";
 import KalkulatorPph21 from "./pages/KalkulatorPph21";
 import KalkulatorKpr from "./pages/KalkulatorKpr";
-import PrivacyPolicy from "./pages/privacy-policy";
-import TermsOfService from "./pages/terms-of-service";
-import Disclaimer from "./pages/disclaimer";
+import PrivacyPolicy from "./pages/privacypolicy";
+import TermsOfService from "./pages/termsofservice";
+import Disclaimer from "./pages/Disclaimer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
