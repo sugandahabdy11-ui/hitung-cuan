@@ -13,7 +13,7 @@ export function LegalLayout({ children }: LegalLayoutProps) {
       <Header />
 
       {/* Legal Content */}
-      <main className="flex-1">
+      <main className="flex-1" role="main">
         <div className="container max-w-3xl py-12">
           <article className="prose prose-slate dark:prose-invert">
             {children}
