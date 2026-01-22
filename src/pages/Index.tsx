@@ -211,7 +211,7 @@ const Index = () => {
             description: "Kalkulator keuangan online gratis untuk Indonesia - hitung gaji bersih, simulasi KPR, dan perencanaan keuangan.",
             potentialAction: {
               "@type": "SearchAction",
-              target: "https://calctools.id/search?q={search_term_string}",
+              target: "https://calctoolsfinance.site//search?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }),
