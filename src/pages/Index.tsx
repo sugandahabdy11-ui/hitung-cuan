@@ -46,10 +46,10 @@ const Index = () => {
       <section className="hero-gradient text-primary-foreground py-16 md:py-24">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">
               Kalkulator Keuangan Indonesia
             </h1>
-            <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl mb-8 leading-relaxed text-white">
               Hitung gaji bersih, simulasi KPR, dan perencanaan keuangan Anda dengan 
               kalkulator online gratis dan akurat. Dibuat khusus untuk kebutuhan finansial di Indonesia.
             </p>
@@ -67,8 +67,7 @@ const Index = () => {
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
               >
                 <Link to="/kalkulator-kpr">
                   <Home className="mr-2 h-5 w-5" />
