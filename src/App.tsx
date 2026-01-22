@@ -10,18 +10,13 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import Index from "./pages/Index";
 import KalkulatorPph21 from "./pages/KalkulatorPph21";
 import KalkulatorKpr from "./pages/KalkulatorKpr";
-import PrivacyPolicy from "./pages/privacypolicy";
-import TermsOfService from "./pages/termsofservice";
-import Disclaimer from "./pages/Disclaimer";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import Disclaimer from "./pages/Disclaimer"; // jika sudah rename file
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-/**
- * Initialize theme based on:
- * 1. localStorage
- * 2. system preference
- */
 function ThemeInit() {
   useEffect(() => {
     const storedTheme = localStorage.getItem("calctools-theme");
@@ -34,11 +29,8 @@ function ThemeInit() {
       return;
     }
 
-    if (storedTheme === "light") {
-      return;
-    }
+    if (storedTheme === "light") return;
 
-    // Auto detect system preference
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       root.classList.add("dark");
     }
@@ -57,7 +49,7 @@ export default function App() {
 
         <BrowserRouter>
           <Routes>
-            {/* MAIN PAGES */}
+            {/* MAIN */}
             <Route path="/" element={<Index />} />
             <Route
               path="/kalkulator-gaji-bersih-pph21"
@@ -65,7 +57,7 @@ export default function App() {
             />
             <Route path="/kalkulator-kpr" element={<KalkulatorKpr />} />
 
-            {/* LEGAL PAGES (WAJIB UNTUK ADS & TRUST) */}
+            {/* LEGAL */}
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
