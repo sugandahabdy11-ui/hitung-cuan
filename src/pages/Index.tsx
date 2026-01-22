@@ -207,7 +207,7 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "CalcTools Finance Indonesia",
-            url: "https://calctools.id",
+            url: "https://calctoolsfinance.site",
             description: "Kalkulator keuangan online gratis untuk Indonesia - hitung gaji bersih, simulasi KPR, dan perencanaan keuangan.",
             potentialAction: {
               "@type": "SearchAction",
