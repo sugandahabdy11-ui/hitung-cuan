@@ -1,5 +1,8 @@
+import { LegalLayout } from "@/components/layouts/LegalLayout";
+
 export default function Disclaimer() {
   return (
+    <LegalLayout>
     <div className="container mx-auto px-4 py-10 prose dark:prose-invert">
       <h1>Disclaimer</h1>
       <p> 
@@ -57,5 +60,6 @@ export default function Disclaimer() {
       </p>
       <p><strong>Terakhir diperbarui:</strong> 2026</p>
     </div>
+    </LegalLayout>
   );
 }
