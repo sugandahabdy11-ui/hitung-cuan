@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
+import { Footer } from "@/components/Footer";
 
 // Pages
 import Index from "./pages/Index";
@@ -12,7 +13,7 @@ import KalkulatorPph21 from "./pages/KalkulatorPph21";
 import KalkulatorKpr from "./pages/KalkulatorKpr";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
-import Disclaimer from "./pages/Disclaimer"; // jika sudah rename file
+import Disclaimer from "./pages/Disclaimer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -65,6 +66,9 @@ export default function App() {
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+
+          {/* GLOBAL FOOTER */}
+          <Footer />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
