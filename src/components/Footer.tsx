@@ -7,29 +7,29 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card mt-auto">
       <div className="container py-8 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2 font-bold text-lg">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <Calculator className="h-4 w-4" />
               </div>
-              <span>CalcTools Finance</span>
+              <span>CalcTools Finance Indonesia</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Kalkulator keuangan online terpercaya untuk menghitung gaji bersih, 
-              cicilan KPR, dan perencanaan keuangan Anda di Indonesia.
+              Kalkulator keuangan online gratis untuk menghitung gaji bersih PPh 21,
+              cicilan KPR, dan estimasi perencanaan keuangan di Indonesia.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Kalkulator */}
           <div>
             <h3 className="font-semibold mb-4">Kalkulator</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   to="/kalkulator-gaji-bersih-pph21"
-                  className="text-muted-foreground hover:text-foreground transition-theme"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Kalkulator Gaji Bersih (PPh 21)
                 </Link>
@@ -37,7 +37,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/kalkulator-kpr"
-                  className="text-muted-foreground hover:text-foreground transition-theme"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Kalkulator KPR / Kredit Rumah
                 </Link>
@@ -45,19 +45,52 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Disclaimer */}
+          {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Disclaimer</h3>
+            <h3 className="font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  to="/privacy-policy"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/terms-of-service"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/disclaimer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Disclaimer
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Disclaimer Text */}
+          <div>
+            <h3 className="font-semibold mb-4">Informasi</h3>
             <p className="text-sm text-muted-foreground">
-              Hasil perhitungan bersifat estimasi dan hanya untuk referensi. 
-              Untuk perhitungan pajak resmi, konsultasikan dengan konsultan 
-              pajak atau akuntan bersertifikat.
+              Seluruh hasil perhitungan di situs ini bersifat estimasi dan tidak
+              menggantikan perhitungan resmi dari pihak bank, perusahaan, atau
+              otoritas pajak. Gunakan sebagai referensi awal.
             </p>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {currentYear} CalcTools Finance Indonesia. Hak cipta dilindungi.</p>
+          <p>
+            © {currentYear} CalcTools Finance Indonesia. Seluruh hak cipta dilindungi.
+          </p>
         </div>
       </div>
     </footer>
