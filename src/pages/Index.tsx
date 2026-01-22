@@ -1,4 +1,4 @@
-import { Layout } from "@/components/layouts/MainLayout";
+import { MainLayout } from "@/components/layouts/MainLayout";
 import { Link } from "react-router-dom";
 import { Calculator, Home, ArrowRight, Shield, Zap, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -41,7 +41,7 @@ const features = [
 
 const Index = () => {
   return (
-    <Layout>
+    <MainLayout>
       {/* Hero Section */}
       <section className="hero-gradient text-primary-foreground py-16 md:py-24">
         <div className="container">
@@ -217,7 +217,7 @@ const Index = () => {
           }),
         }}
       />
-    </Layout>
+    </MainLayout>
   );
 };
 
