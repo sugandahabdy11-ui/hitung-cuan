@@ -1,31 +1,65 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
+/**
+ * Sitemap for calctoolsfinance.site
+ * Optimized for SEO & Google Search Console
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://calctoolsfinance.site';
+  const baseUrl = "https://calctoolsfinance.site";
+  const lastModified = new Date();
 
   return [
+    /* ======================
+       CORE PAGES
+    ====================== */
     {
       url: `${baseUrl}/`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
+      lastModified,
+      changeFrequency: "daily",
       priority: 1.0,
     },
+
+    /* ======================
+       CALCULATOR PAGES
+    ====================== */
     {
       url: `${baseUrl}/kalkulator-gaji-pph21`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified,
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/kalkulator-kpr`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified,
+      changeFrequency: "weekly",
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/emi-calculator`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+
+    /* ======================
+       LEGAL PAGES (Adsense)
+    ====================== */
+    {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms-of-service`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/disclaimer`,
+      lastModified,
+      changeFrequency: "yearly",
       priority: 0.3,
     },
   ];
