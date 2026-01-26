@@ -9,6 +9,7 @@ interface SeoProps {
 
 const SITE_NAME = "CalcTools Finance Indonesia";
 const DEFAULT_OG_IMAGE = "https://calctoolsfinance.site/og-image.png";
+const SITE_URL = "https://calctoolsfinance.site";
 
 export function Seo({
   title,
@@ -16,29 +17,33 @@ export function Seo({
   canonical,
   noindex = false,
 }: SeoProps) {
+  const canonicalUrl = canonical ?? SITE_URL;
+
   return (
     <Helmet>
+      {/* Charset */}
+      <meta charSet="utf-8" />
+
       {/* Basic */}
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta charSet="utf-8" />
 
       {/* Canonical */}
-      {canonical && <link rel="canonical" href={canonical} />}
+      <link rel="canonical" href={canonicalUrl} />
 
       {/* Robots */}
-      {noindex ? (
-        <meta name="robots" content="noindex, nofollow" />
-      ) : (
-        <meta name="robots" content="index, follow" />
-      )}
+      <meta
+        name="robots"
+        content={noindex ? "noindex, nofollow" : "index, follow"}
+      />
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE_NAME} />
+      <meta property="og:locale" content="id_ID" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      {canonical && <meta property="og:url" content={canonical} />}
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={DEFAULT_OG_IMAGE} />
 
       {/* Twitter */}
