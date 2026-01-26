@@ -161,6 +161,40 @@ export default function Index() {
           })}
         </div>
       </section>
+
+      {/* SEO CONTENT */}
+    <section className="py-16">
+      <div className="container max-w-4xl">
+        <article className="prose max-w-none">
+          <h2>Kalkulator Keuangan Online untuk Indonesia</h2>
+          <p>
+          CalcTools Finance Indonesia adalah platform kalkulator keuangan online
+          gratis yang dirancang khusus untuk kebutuhan masyarakat Indonesia.
+          Semua perhitungan dilakukan langsung di browser tanpa menyimpan data
+          pengguna.
+          </p>
+
+          <h3>Hitung Gaji Bersih PPh 21</h3>
+          <p>
+          Gunakan kalkulator gaji bersih PPh 21 untuk mengetahui take home pay
+          setelah potongan pajak dan BPJS sesuai peraturan pajak Indonesia
+          terbaru.
+          </p>
+          
+        <h3>Simulasi Cicilan KPR</h3>
+          <p>
+          Kalkulator KPR membantu Anda mensimulasikan cicilan rumah, total bunga,
+          dan estimasi pembayaran berdasarkan harga properti, uang muka, tenor,
+          dan suku bunga.
+          </p>
+
+          <p>
+          Semua alat di CalcTools Finance Indonesia disediakan gratis sebagai
+          referensi awal untuk membantu perencanaan keuangan Anda.
+          </p>
+      </article>
+    </div>
+    </section>
     </MainLayout>
   );
 }
