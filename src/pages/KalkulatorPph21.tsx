@@ -91,13 +91,58 @@ export default function KalkulatorPph21Page() {
         </div>
       </section>
 
-      {/* FINANCE DISCLAIMER (INTERNAL) */}
+      {/* SEO CONTENT (KRITIS UNTUK INDEXING) */}
+      <section className="py-10">
+        <div className="container max-w-4xl">
+          <article className="prose max-w-none">
+            <h2>Apa Itu PPh 21?</h2>
+            <p>
+              Pajak Penghasilan Pasal 21 (PPh 21) adalah pajak yang dikenakan
+              atas penghasilan berupa gaji, upah, honorarium, tunjangan, dan
+              pembayaran lain yang diterima oleh orang pribadi sehubungan
+              dengan pekerjaan atau jasa di Indonesia.
+            </p>
+
+            <h2>Siapa yang Wajib Membayar PPh 21?</h2>
+            <p>
+              PPh 21 dikenakan kepada karyawan tetap, karyawan tidak tetap,
+              pegawai negeri sipil (PNS), anggota TNI/Polri, hingga tenaga
+              profesional yang menerima penghasilan dari pemberi kerja.
+            </p>
+
+            <h3>Penghasilan yang Dikenakan PPh 21</h3>
+            <ul>
+              <li>Gaji dan tunjangan</li>
+              <li>Bonus dan THR</li>
+              <li>Honorarium dan fee</li>
+              <li>Imbalan jasa tertentu</li>
+            </ul>
+
+            <h2>Komponen Perhitungan Gaji Bersih</h2>
+            <p>
+              Gaji bersih atau take home pay dihitung dengan mengurangkan
+              penghasilan bruto dengan potongan PPh 21, iuran BPJS Kesehatan,
+              dan BPJS Ketenagakerjaan sesuai ketentuan yang berlaku.
+            </p>
+
+            <h2>Mengapa Perlu Menggunakan Kalkulator PPh 21?</h2>
+            <p>
+              Dengan kalkulator PPh 21, Anda dapat mengetahui estimasi gaji
+              bersih secara cepat dan akurat. Ini membantu perencanaan keuangan,
+              evaluasi penawaran gaji, serta simulasi penghasilan bulanan maupun
+              tahunan.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* FINANCE DISCLAIMER */}
       <section className="pb-10">
         <div className="container max-w-4xl">
           <div className="rounded-xl border bg-muted/50 p-6 text-sm text-muted-foreground">
             <strong>Catatan:</strong> Hasil perhitungan bersifat estimasi dan tidak
             menggantikan perhitungan resmi dari Direktorat Jenderal Pajak (DJP)
-            atau kebijakan perusahaan. Gunakan sebagai referensi awal.
+            atau kebijakan perusahaan.
           </div>
         </div>
       </section>
