@@ -1,5 +1,10 @@
 import { LegalLayout } from "@/components/layouts/LegalLayout";
 import { Seo } from "@/components/Seo";
+import { KprCalculator } from "@/components/KprCalculator";
+import { FaqSection } from "@/components/FaqSection";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function TermsOfService() {
   return (
