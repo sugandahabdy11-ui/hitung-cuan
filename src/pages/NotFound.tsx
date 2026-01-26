@@ -1,5 +1,10 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { KprCalculator } from "@/components/KprCalculator";
+import { FaqSection } from "@/components/FaqSection";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   const location = useLocation();
