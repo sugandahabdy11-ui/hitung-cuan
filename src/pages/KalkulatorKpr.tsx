@@ -101,6 +101,53 @@ export default function KalkulatorKprPage() {
         </div>
       </section>
 
+      {/* SEO CONTENT (WAJIB UNTUK INDEXING) */}
+      <section className="py-10">
+        <div className="container max-w-4xl">
+          <article className="prose max-w-none">
+            <h2>Apa Itu Kredit Pemilikan Rumah (KPR)?</h2>
+            <p>
+              Kredit Pemilikan Rumah (KPR) adalah fasilitas pembiayaan dari bank
+              atau lembaga keuangan yang memungkinkan masyarakat membeli rumah
+              dengan sistem cicilan jangka panjang. KPR menjadi solusi utama bagi
+              masyarakat Indonesia yang ingin memiliki rumah tanpa harus
+              membayar secara tunai.
+            </p>
+
+            <h2>Cara Kerja KPR di Indonesia</h2>
+            <p>
+              Pada skema KPR, pembeli membayar uang muka (DP), sementara sisa
+              harga rumah dibiayai oleh bank. Nasabah kemudian membayar cicilan
+              bulanan yang terdiri dari pokok pinjaman dan bunga sesuai tenor
+              yang disepakati.
+            </p>
+
+            <h3>Komponen Perhitungan KPR</h3>
+            <ul>
+              <li>Harga rumah</li>
+              <li>Uang muka (DP)</li>
+              <li>Suku bunga KPR</li>
+              <li>Tenor kredit</li>
+            </ul>
+
+            <h2>Mengapa Perlu Menggunakan Kalkulator KPR?</h2>
+            <p>
+              Kalkulator KPR membantu Anda memperkirakan cicilan bulanan,
+              total bunga, dan total biaya kredit sebelum mengajukan KPR ke
+              bank. Dengan simulasi ini, Anda dapat menyesuaikan pilihan rumah
+              dengan kemampuan finansial.
+            </p>
+
+            <h2>Tips Mengajukan KPR Agar Disetujui</h2>
+            <p>
+              Pastikan penghasilan stabil, rasio cicilan terhadap gaji sehat,
+              serta riwayat kredit yang baik. Bank umumnya merekomendasikan
+              cicilan KPR tidak melebihi 30% dari penghasilan bulanan.
+            </p>
+          </article>
+        </div>
+      </section>
+
       {/* FINANCIAL DISCLAIMER */}
       <section className="pb-10">
         <div className="container max-w-4xl">
@@ -108,7 +155,6 @@ export default function KalkulatorKprPage() {
             <strong>Catatan:</strong> Hasil simulasi KPR ini bersifat estimasi dan
             tidak mengikat. Cicilan aktual dapat berbeda tergantung kebijakan
             bank, jenis bunga, biaya administrasi, asuransi, dan faktor lainnya.
-            Gunakan sebagai referensi awal sebelum mengajukan KPR ke bank.
           </div>
         </div>
       </section>
